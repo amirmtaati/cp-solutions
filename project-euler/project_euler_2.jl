@@ -15,6 +15,8 @@ function solve()
     return sum(f for f in (fib(n+1) for n in 2:3:100) if f <= 4_000_000)
 end
 
+println(solve())
+
 @testset "Test" begin
     @test solve() == 4613732
 end
